@@ -1,6 +1,6 @@
 ;; Setting English Font
 (set-face-attribute
- 'default nil :font "Liberation Mono 15")
+ 'default nil :font "Monospace 15")
 
 ;; Chinese Font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
