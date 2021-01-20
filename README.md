@@ -1,6 +1,6 @@
 # Personal Emacs Configuration
 
-All files are in ~/.emacs.d/personal, except for ~/.emacs.d/init.el, which should contain:
+All files are in `~/.emacs.d/personal`, except for `~/.emacs.d/init.el`, which should contain:
 
 ```
 ;; load all el-files in ./personal
