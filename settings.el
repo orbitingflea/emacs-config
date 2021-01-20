@@ -1,16 +1,15 @@
-;; (tool-bar-mode 0)
-;; (show-paren-mode 1)
-;; (column-number-mode 1)
-;; (electric-indent-mode 1)
-
 (load-theme 'tango-dark)
+(selectrum-mode 1)
 
-;; (setq-default indent-tabs-mode nil)
 (setq make-backup-files nil)
 (setq inhibit-startup-screen t)
 
 (global-set-key [f5] 'compile)
 (global-set-key [f6] 'shell)
-(setq-default truncate-lines t)
 
-(selectrum-mode 1)
+;; truncate lines by default
+(setq-default truncate-lines t)
+(defun hook-do-not-truncate-lines ()
+  (setq truncate-lines nil))
+(add-hook 'org-mode-hook 'hook-do-not-truncate-lines)
+(add-hook 'text-mode-hook 'hook-do-not-truncate-lines)
