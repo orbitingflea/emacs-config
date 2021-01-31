@@ -11,6 +11,7 @@
 (setq-default truncate-lines t
               default-tab-width 4
               tab-width 4)
+
 (defun hook-do-not-truncate-lines ()
   (setq truncate-lines nil))
 (add-hook 'org-mode-hook 'hook-do-not-truncate-lines)
